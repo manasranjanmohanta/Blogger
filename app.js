@@ -9,7 +9,7 @@ const app = express();
 mongoose.set('strictQuery', true); // to remove deprication warning
 
 // connect to db
-const dbURI = 'mongodb+srv://root:manas1234@node-db.espa2k8.mongodb.net/node-db?retryWrites=true&w=majority';
+const dbURI = 'mongodb+srv://root:password@node-db.espa2k8.mongodb.net/node-db?retryWrites=true&w=majority';
 mongoose.connect(dbURI) // asynchronous method so it takes some time to fire
     .then((result) =>{
         // Listen for request
